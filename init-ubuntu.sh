@@ -9,6 +9,9 @@ cd shell-scripts
 ./essentials.sh
 ./initialize-pyenv.sh
 
+# TODO: Add terminator settings
+# TODO: Add VSCode config
+
 # Echoing
 # This supposes that the git repo has been cloned on the home folder
 #PATH=$PATH:~/dotfiles >> ~/.bashrc
