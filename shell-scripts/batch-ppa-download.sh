@@ -1,3 +1,5 @@
+echo "---- Installing packages from PPA ----"
+
 # KDEnlive
 echo "## Preping KDEnlive ##"
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable

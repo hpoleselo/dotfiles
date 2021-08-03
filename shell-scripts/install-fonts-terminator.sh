@@ -2,10 +2,13 @@
 echo "---- Installing Fonts from /fonts directory ----"
 
 # Installing fonts used in terminator profile
+echo "\n ---- Creating /fonts directory inside .local ----"
+mkdir ~/.local/share/fonts
+
+echo "\n ---- Copying fonts to /fonts directory ----"
 cp ../fonts/* ~/.local/share/fonts
 
-echo "---- Importing Terminator profile ----"
-# Importing terminator profile
+echo "\n---- Importing Terminator profile ----"
 cp ../terminator/config ~/.config/terminator/
 
 echo "---- Done! ----"
