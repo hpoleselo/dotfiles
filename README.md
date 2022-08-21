@@ -1,5 +1,8 @@
 # Ubuntu Initial Setup
+
 Repo to maintain my config files for Ubuntu.
+
+Currently updated for Ubuntu 20.04.
 
 Clone this repo and run:
 
