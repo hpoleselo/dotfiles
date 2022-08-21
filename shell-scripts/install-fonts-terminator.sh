@@ -6,9 +6,9 @@ echo "\n ---- Creating /fonts directory inside .local ----"
 mkdir ~/.local/share/fonts
 
 echo "\n ---- Copying fonts to /fonts directory ----"
-cp ../fonts/* ~/.local/share/fonts
+cp -r ../fonts/* ~/.local/share/fonts
 
 echo "\n---- Importing Terminator profile ----"
-cp ../terminator/config ~/.config/terminator/
+cp -r ../terminator/config ~/.config/terminator/
 
 echo "---- Done! ----"
