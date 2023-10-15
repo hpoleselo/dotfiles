@@ -3,6 +3,7 @@
 echo "------- Installing packages from aptitude --------\n\n "------- 
 sudo apt-get install terminator git deluge curl gparted python3-pip python3-dev python3-venv okular vlc filezilla vokoscreen tree gimp htop mediainfo ffmpeg p7zip-full usb-creator-gtk net-tools openssh-server x11vnc gnome-tweaks chromium-browser
 sudo snap install postman
+snap install spotify
 sudo snap install --classic code
 
 # Reminder for virtual environment initialization
