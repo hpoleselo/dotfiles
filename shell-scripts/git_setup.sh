@@ -12,7 +12,9 @@ echo -e "\nSetting alias to change between SSH sessions in Git..."
 
 #export GIT_USER_NAME="Henrique Poleselo"
 #export GIT_EMAIL="hpoleselo@gmail.com"
-echo "alias setgitinfo='export GIT_USER_NAME="Henrique Poleselo" ; export GIT_EMAIL="hpoleselo@gmail.com"'" >> ~/.bashrc
+echo "alias setprsnlgitinfo='export GIT_USER_NAME=Henrique Poleselo ; export GIT_EMAIL=hpoleselo@gmail.com'"
+#echo "alias setgitinfo='export GIT_USER_NAME="Henrique Poleselo" ; export GIT_EMAIL="hpoleselo@gmail.com"'" >> ~/.bashrc
 
 # TODO: Test if this function works properly
-echo "alias setpersonalcreds='setgitinfo ; git config user.name ${GIT_USER_NAME} ; git config user.email ${GIT_EMAIL}'" >> ~/.bashrc
+#echo "alias setpersonalcreds='setgitinfo ; git config --global user.name ${GIT_USER_NAME} ; git config --global user.email ${GIT_EMAIL}'" >> ~/.bashrc
+echo "alias setpersonalcreds='setprsnlgitinfo ; git config --global user.name ${GIT_USER_NAME} ; git config --global user.email ${GIT_EMAIL}'"
