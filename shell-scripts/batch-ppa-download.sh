@@ -1,10 +1,5 @@
 echo "---- Installing packages from PPA ----"
 
-# Spotify
-echo "## Preping Spotify ##"
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-
 # Libreoffice
 echo "## Preping Libreoffice ##"
 sudo add-apt-repository ppa:libreoffice
