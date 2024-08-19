@@ -1,26 +1,22 @@
 echo "---- Installing packages from PPA ----"
 
-# KDEnlive
-echo "## Preping KDEnlive ##"
-sudo add-apt-repository ppa:kdenlive/kdenlive-stable
-
 # Spotify
 echo "## Preping Spotify ##"
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
-# Typora
-echo "## Preping Typora ##"
-wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
-sudo add-apt-repository 'deb https://typora.io/linux ./'
-
 # Libreoffice
 echo "## Preping Libreoffice ##"
 sudo add-apt-repository ppa:libreoffice
+
+# Sublime Merge
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+sudo apt-get install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
 # Update
 echo "Updating"
 sudo apt-get update
 
 # Install everything
-sudo apt-get install spotify-client typora libreoffice kdenlive
+sudo apt-get install spotify-client libreoffice sublime-merge
